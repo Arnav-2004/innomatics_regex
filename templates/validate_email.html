@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation Result</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .valid {
+            color: #5bc0de;
+            font-weight: bold;
+        }
+
+        .invalid {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Email Validation Result</h1>
+    <p>Email: {{ email }}</p>
+    <p class="{{ 'valid' if is_valid else 'invalid' }}">{{ "Valid" if is_valid else "Invalid" }}</p>
+</body>
+
+</html>
